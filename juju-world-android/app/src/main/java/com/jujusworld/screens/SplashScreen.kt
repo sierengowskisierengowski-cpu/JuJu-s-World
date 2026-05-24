@@ -82,7 +82,7 @@ fun SplashScreen(navController: NavController) {
         delay(700);  stage = 7
         delay(700);  stage = 8
         delay(700);  stage = 9
-        delay(7100)  // let greeting audio finish
+        delay(12000) // let greeting audio finish
         navController.navigate(Routes.HOME) {
             popUpTo(Routes.SPLASH) { inclusive = true }
         }
