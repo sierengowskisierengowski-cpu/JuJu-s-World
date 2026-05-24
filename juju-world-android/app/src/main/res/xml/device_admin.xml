@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Device Admin policy declaration for JuJu's World kiosk mode.
+
+    This file is referenced by AdminReceiver in AndroidManifest.xml.
+    The policies declared here are what the admin is ALLOWED to use.
+    lock-task / kiosk mode itself is a device-owner feature — enable it by:
+
+        adb shell dpm set-device-owner com.jujusworld/.AdminReceiver
+-->
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-policies>
+        <force-lock />
+        <watch-login />
+        <limit-password />
+        <wipe-data />
+        <disable-keyguard-features />
+    </uses-policies>
+</device-admin>
